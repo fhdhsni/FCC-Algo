@@ -1,7 +1,7 @@
 const convertToRoman = require("../290_convertToRoman.js");
 const assert = require("chai").assert;
 
-describe("29_convertToRoman", () => {
+describe("290_convertToRoman", () => {
   it("Convert the given number into a roman numeral.", () => {
     assert.equal(convertToRoman(2), "II");
     assert.equal(convertToRoman(3), "III");
