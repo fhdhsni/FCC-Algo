@@ -1,0 +1,1 @@
+My solutions to [Intermediate](https://www.freecodecamp.com/map-aside#nested-collapseIntermediateAlgorithmScripting) and [advance](https://www.freecodecamp.com/map-aside#nested-collapseAdvancedAlgorithmScripting) algorithm scripting challenges of @freecodecampe

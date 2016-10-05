@@ -1,0 +1,31 @@
+{
+  "name": "automated_build",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "prelint": "echo '\nLinting JS files...'",
+    "test": "mocha",
+    "lint": "eslint *.js test/*.js",
+    "pretest": "npm run lint -- --format 'node_modules/eslint-friendly-formatter'",
+    "build:js": "browserify -d src/js/*.js -o src/js/bundle.js -t [ babelify --presets [ es2015 ] ]"
+  },
+  "author": "Farhad hsni <farhad.hsni@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1",
+    "chai": "^3.5.0",
+    "eslint": "^3.0.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-friendly-formatter": "^2.0.6",
+    "eslint-plugin-import": "^1.10.2",
+    "eslint-plugin-jsx-a11y": "^1.5.5",
+    "eslint-plugin-react": "^5.2.2",
+    "minimatch": "^3.0.2",
+    "mocha": "^2.5.3",
+    "semver": "^5.2.0",
+    "sinon": "^1.17.6"
+  }
+}
