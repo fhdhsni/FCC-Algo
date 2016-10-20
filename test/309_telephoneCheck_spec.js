@@ -1,7 +1,7 @@
 const telephoneCheck = require("../309_telephoneCheck.js");
 const assert = require("chai").assert;
 
-describe.only("309_telephoneCheck", () => {
+describe("309_telephoneCheck", () => {
   it("https://www.freecodecamp.com/challenges/validate-us-telephone-numbers", () => {
     assert.isBoolean(telephoneCheck("555-555-5555"));
 
